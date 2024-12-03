@@ -6,15 +6,18 @@ const gatsby = ["Francesco", "Antonio", "Vannessa", "Mirko", "Marco"]
 
 let nameUtente = prompt(`Inserisci il tuo nome`)
 
-let bool = false;
+let isNameList = false;
 
-for ( i = 0; i <= gatsby.length - 1; i++) {
-    
-    if ( nameUtente != gatsby[i].toString()) {
-        alert(`non poi entrare`)
-    }
-    else {
-        alert(`poi entrare`)
+for ( i = 0; i < gatsby.length; i++) {
+   
+    if ( gatsby[i] === nameUtente ) {
+        isNameList = true;
     }
    
+}
+if(isNameList) {
+    alert(`puoi entrare`)
+}
+else {
+    alert(`Non poi entrare`)
 }
