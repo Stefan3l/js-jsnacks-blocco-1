@@ -10,12 +10,12 @@ const secondNumber = Number(prompt(`Inserisci il secondo numero`))
 
    if ( firstNumber > secondNumber ) {
     console.log(firstNumber)
-    alert(`Il numero piu grande e ${firstNumber}`)
+    alert(`Il numero piu grande e ${firstNumber} > ${secondNumber} 😁`)
    }
      else if  ( firstNumber < secondNumber ) {
         console.log(secondNumber)
-        alert(`Il numero piu grande e ${secondNumber}`)
+        alert(`Il numero piu grande e ${secondNumber} > ${firstNumber} 😁`)
     }
     else {
-        alert(`i numeri sono pari`)
+        alert(`i numeri sono pari ${firstNumber} = ${secondNumber} 😁`)
     }
